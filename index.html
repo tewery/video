@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>сикрит  ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<section class="screen active" id="startScreen">
+    <div class="eyebrow">э лиитле челенж фор ю</div>
+    <div class="heart">♡</div>
+    <h1>можешь<br>справиться?</h1>
+    <p>запоминай цвета и повторяй последовательность.<br>в конце че то че то </p>
+    <button class="main-btn" id="startBtn">Начать игру <span>↗</span></button>
+    <div class="bottom-note">ритаонли! · скоро8месяцев</div>
+</section>
+
+<section class="screen game-screen" id="gameScreen">
+    <div class="top-label">апчи</div>
+    <div class="level">левель <span id="level">1</span> / 5</div>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <h2 id="gameTitle">ну ты помнишь как тут.</h2>
+    <p id="gameDescription">смотри и запоминай</p>
+
+    <div class="game-board">
+        <button class="color-btn red" data-color="0" aria-label="Красный"></button>
+        <button class="color-btn blue" data-color="1" aria-label="Синий"></button>
+        <button class="color-btn green" data-color="2" aria-label="Зелёный"></button>
+        <button class="color-btn yellow" data-color="3" aria-label="Жёлтый"></button>
+    </div>
+
+    <div class="game-status" id="status">Приготовься...</div>
+    <div class="attempt-info" id="attemptInfo"></div>
+</section>
+
+<section class="screen victory-screen" id="victoryScreen">
+    <div class="eyebrow">MISSION COMPLETED</div>
+    <div class="victory-heart">♥</div>
+    <h1>тииии<br><span>умничка.</span></h1>
+    <p>кхм<br>А теперь... кхмммм.</p>
+    <button class="main-btn" id="revealBtn">нажимай... <span>♡</span></button>
+</section>
+
+<section class="screen video-screen" id="videoScreen">
+    <div class="eyebrow">a video massage </div>
+    <h1>зис видео фор ю<br><span>котенок.</span></h1>
+    <p>нууу</p>
+
+    <div class="video-container">
+        <video id="loveVideo" controls playsinline preload="metadata">
+            <source src="video.mp4" type="video/mp4">
+            Твой браузер не поддерживает видео.
+        </video>
+    </div>
+    <div class="./video-caption">мейд виз лав · навсегда/форевер </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
